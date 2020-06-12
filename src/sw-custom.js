@@ -36,7 +36,7 @@ if ("function" === typeof importScripts) {
       })
     );
 
-    // Font caching
+    // font caching
     workbox.routing.registerRoute(
       new RegExp("https://fonts.(?:.googlepis|gstatic).com/(.*)"),
       new workbox.strategies.NetworkFirst({
